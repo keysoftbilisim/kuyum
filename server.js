@@ -1,3 +1,15 @@
+const corsOptions = {
+    origin: "https://github.com/keysoftbilisim/kuyum:5500", // Eğer farklı bir port veya alan adı kullanıyorsanız güncelleyin
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    credentials: true
+};
+
+app.use(cors(corsOptions));
+
+
+
+
+
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
